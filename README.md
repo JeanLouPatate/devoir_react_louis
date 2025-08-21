@@ -1,12 +1,35 @@
-# React + Vite
+# Portfolio React.js de John Doe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Ce projet consiste à créer un site portfolio pour un futur développeur web, John Doe. Le site permet à John de se présenter sur le marché de l'emploi et de montrer ses réalisations. Le projet est développé avec **React.js**, **Bootstrap**, **HTML**, **CSS** et **JavaScript**.  
 
-Currently, two official plugins are available:
+Le site est optimisé pour le SEO et respecte les normes W3C.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Présentation du développeur (bio, compétences, contact)
+- Galerie de réalisations avec images libres de droits ou personnalisées
+- Design responsive grâce à Bootstrap
+- Effets graphiques personnalisés via CSS
+- Intégration GitHub pour le suivi du projet
+
+---
+
+## Technologies utilisées
+
+- **React.js** : framework principal pour le développement front-end
+- **Bootstrap** : pour la mise en page responsive
+- **HTML & CSS** : structure et style des pages
+- **JavaScript** : interactions et logique du site
+- **Git & GitHub** : gestion de version et suivi du projet
+
+---
+
+## Installation
+
+1. Cloner le dépôt :
+
+```bash
+git clone https://github.com/votre-utilisateur/portfolio-react.git
