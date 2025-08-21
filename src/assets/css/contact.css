@@ -1,0 +1,54 @@
+.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.john{
+      font-size: 25px; 
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; 
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ombre plus visible */
+  padding: 20px;
+  margin: 50px auto;           /* centre horizontalement */
+  display: flex;
+  flex-wrap: wrap;             /* permet le passage en colonne sur mobile */
+  justify-content: center;     /* centre les enfants horizontalement */
+  gap: 40px;                   /* espace entre les deux div */
+  max-width: 1200px;           /* limite la largeur pour mieux voir l'ombre */
+}
+
+.formulaire {
+  flex: 1 1 400px; /* minimum 400px, prend de la place sinon */
+  max-width: 500px; /* limite la largeur */
+}
+.liner{
+    width: 100%;              /* largeur complète de son conteneur */
+    height: 5px;              /* épaisseur de la barre */
+    background-color: #646cffaa; /* bleu clair */
+    border-radius: 10px;       /* coins arrondis */
+    margin: 20px auto;           /* espace au-dessus et en-dessous */
+    margin-bottom: 80px;
+}
+.service-banner{
+    margin-bottom: 50px;
+}
