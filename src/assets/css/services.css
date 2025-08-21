@@ -1,7 +1,7 @@
 .line {
     width: 30%;              /* largeur complète de son conteneur */
     height: 5px;              /* épaisseur de la barre */
-    background-color: #5bc0eb; /* bleu clair */
+    background-color: #0d6efd; /* bleu clair */
     border-radius: 10px;       /* coins arrondis */
     margin: 20px auto;           /* espace au-dessus et en-dessous */
     margin-bottom: 80px;

@@ -1,4 +1,3 @@
-/* Dans ton fichier CSS */
 .card-hover {
   transition: all 0.3s ease; /* animation douce */
 }
@@ -7,4 +6,12 @@
   filter: brightness(85%); /* assombrit légèrement la carte */
   transform: translateY(-3px); /* léger soulèvement */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ombre plus prononcée */
+}
+.card-hover .btn-primary {
+  transition: all 0.3s ease;
+}
+
+.card-hover .btn-primary:hover {
+  background-color: #4da0ff; /* couleur plus claire que le bleu par défaut */
+  border-color: #4da0ff;
 }

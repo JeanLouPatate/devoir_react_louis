@@ -1,52 +1,135 @@
-import React from "react";
-import Header from "../components/header/header.jsx";
-import Footer from "../components/footer/footer.jsx";
+import { Helmet } from "react-helmet";
+import "../assets/css/mentionslegales.css";
 
 function MentionsLegales() {
   return (
-    <div className="d-flex flex-column min-vh-100">
-      {/* Header */}
-      <Header />
+    <div className="d-flex flex-column">
+      {/* Helmet pour meta noindex */}
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Mentions légales</title>
+      </Helmet>
 
-      {/* Contenu principal */}
       <main className="flex-grow-1">
         <div className="container py-5">
           <h1 className="text-center mb-4">Mentions légales</h1>
+          <div className="line"></div>
 
-          <p>
-            Conformément à la loi française, voici les informations légales concernant ce site :
-          </p>
+          <div className="accordion" id="accordionExample">
+            {/* Éditeur du site */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Éditeur du site
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  <ul className="no-bullets">
+                    <li className="john">John Doe</li>
+                    <li>
+                      <i className="bi bi-geo-alt-fill me-2"></i> 40 rue Laure Diebold
+                    </li>
+                    <li>
+                      <i className="bi bi-pin-fill me-2"></i> 69009 Lyon, France
+                    </li>
+                    <li>
+                      <i className="bi bi-telephone-fill me-2"></i> 10 20 30 40 50
+                    </li>
+                    <li>
+                      <i className="bi bi-envelope-fill me-2"></i> john.doe@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-          <h5>Éditeur du site :</h5>
-          <p>
-            John Doe <br />
-            40 rue Laure Diebold <br />
-            69009 Lyon, France <br />
-            Email : John.doe@gmail.com
-          </p>
+            {/* Hébergement */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Hébergeur
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  <p className="always">alwaysdata</p>
+                  <p>91 rue du faubourg Saint-Honoré, 75006 Paris</p>
+                  <a href="https://www.alwaysdata.com" target="_blank" rel="noreferrer">
+                    <i className="bi bi-globe me-2"></i>AlwaysData
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <h5>Hébergement :</h5>
-          <p>
-            Le site est hébergé par : <br />
-            Nom de l’hébergeur <br />
-            Adresse de l’hébergeur <br />
-            Contact de l’hébergeur
-          </p>
+            {/* Propriété intellectuelle */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Crédits
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  <p>
+                    Ce site a été réalisé par John Doe, étudiant au{" "}
+                    <a href="https://www.alwaysdata.com" target="_blank" rel="noreferrer">
+                      Centre Européen de formation
+                    </a>
+                  </p>
+                  <p>
+                    Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site{" "}
+                    <a href="https://www.alwaysdata.com" target="_blank" rel="noreferrer">Pyxabay</a>
+                  </p>
+                  <p>
+                    La favicon de ce site a été fournie par{" "}
+                    <a href="https://www.alwaysdata.com" target="_blank" rel="noreferrer">
+                      John Doe icons ersellt von Freepik - Flaticon
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <h5>Propriété intellectuelle :</h5>
-          <p>
-            L’ensemble du contenu de ce site (textes, images, logos, vidéos, …) est la propriété de John Doe ou de ses partenaires et est protégé par le droit d’auteur.
-          </p>
-
-          <h5>Protection des données :</h5>
-          <p>
-            Les informations collectées via le site sont utilisées uniquement pour répondre à vos demandes et ne sont pas transmises à des tiers.
-          </p>
+          </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

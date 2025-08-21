@@ -1,13 +1,12 @@
-/* Footer */
-footer {
-  background-color: rgba(0, 7, 15, 0.982);
-  color: white;
+footer.footer {
+  background-color: #0d0d0d;
+  color: #fff;
   padding: 30px 0;
-  width: 80%;
-  flex-shrink: 0; /* Empêche le footer de rétrécir */
+  width: 100%;
+  flex-shrink: 0;
 }
 
-/* Colonnes et contenu du footer */
+/* Container et colonnes */
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -32,30 +31,22 @@ footer {
   line-height: 1.6;
 }
 
+/* Social icons */
 .social-icons {
   display: flex;
   gap: 15px;
   margin-top: 15px;
 }
+
 .social-icons a {
-  color: rgba(50, 50, 50, 0.6); /* couleur de base */
-  transition: color 0.3s ease, filter 0.3s ease; /* transition douce */
+  color: rgb(0, 0, 0);
+  transition: color 0.3s, transform 0.3s, filter 0.3s;
 }
 
 .social-icons a:hover {
-  color: rgba(0, 0, 0, 0.8); /* couleur plus sombre au survol */
-  filter: brightness(1.2); /* ou légère luminosité pour effet */
-}
-
-
-.social-icons a {
-  color: rgb(226, 6, 6);
-  transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-  color: #2f83e4;
+  filter: brightness(1.5);
   transform: scale(1.1);
+  color: #6b6d6e;
 }
 
 /* Responsive */
@@ -68,4 +59,29 @@ footer {
   .footer-column {
     margin: 20px 0;
   }
+}
+.invisible-link {
+  color: #ffffff;          /* texte blanc visible */
+  text-decoration: none;   /* pas de soulignage par défaut */
+  font-weight: 400;        /* texte normal */
+  transition: all 0.3s ease; /* animation douce au survol */
+}
+
+.invisible-link:hover {
+  color: #ffffff;          /* reste blanc au survol */
+  font-weight: 700;        /* devient gras */
+  text-decoration: underline; /* souligné au survol */
+  cursor: pointer;
+}
+.footer-link {
+  color: #ffffff;          /* blanc visible */
+  text-decoration: none;   /* pas de soulignage */
+  font-weight: 400;        /* texte normal */
+  transition: all 0.3s ease; /* animation douce */
+}
+
+.footer-link:hover {
+  color: #ffffff;          /* reste blanc au survol */
+  font-weight: 700;        /* devient gras */
+  text-decoration: underline; /* souligné */
 }
