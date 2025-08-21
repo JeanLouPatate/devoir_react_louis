@@ -76,7 +76,7 @@ body, html {
   display: block;
 
   height: 6px;              /* épaisseur */
-  background-color: #164ce2; /* bleu clair */
+  background-color: #0d6efd; /* bleu clair */
   border-radius: 3px;        /* arrondi des extrémités */
   margin-top: 10px;           /* espace sous le texte */
 }

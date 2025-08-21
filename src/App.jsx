@@ -8,6 +8,8 @@ import Accueil from "./pages/Accueil.jsx";
 import Services from "./pages/Services.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Contact from "./pages/Contact.jsx";
+import Mentionslegales from "./pages/mentionslegales.jsx";
+
 
 
 import "./App.css";
@@ -22,6 +24,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/mentionslegales" element={<Mentionslegales />} />
         </Routes>
       </main>
       <Footer />

@@ -59,9 +59,8 @@ function ServiceCards() {
       <div
         className="line mb-5"
         style={{
-          width: "150px",
           height: "6px",
-          backgroundColor: "#5bc0eb",
+          backgroundColor: "#0d6efd",
           borderRadius: "10px",
           margin: "0 auto",
         }}
