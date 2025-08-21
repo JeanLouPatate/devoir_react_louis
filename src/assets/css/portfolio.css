@@ -1,0 +1,10 @@
+/* Dans ton fichier CSS */
+.card-hover {
+  transition: all 0.3s ease; /* animation douce */
+}
+
+.card-hover:hover {
+  filter: brightness(85%); /* assombrit légèrement la carte */
+  transform: translateY(-3px); /* léger soulèvement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ombre plus prononcée */
+}
